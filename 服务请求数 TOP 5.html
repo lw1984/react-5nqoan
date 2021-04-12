@@ -40,7 +40,7 @@ var option;
 
 
 var data = [];
-for (let i = 0; i < 5; ++i) {
+for (let i = 0; i < 10; ++i) {
     data.push(Math.round(Math.random() * 10+10));
 }
 
@@ -50,15 +50,15 @@ option = {
     },
     yAxis: {
         type: 'category',
-        data: ['DR', 'DD', 'DM', '商品', '交易'],
+        data: ['DR', 'DD', 'DM', '商品', '交易', 'XX1', 'XX2', 'XX3', 'XX4', 'XX5'],
         inverse: true,
         animationDuration: 300,
         animationDurationUpdate: 300,
-        max: 4 // only the largest 3 bars will be displayed
+        max: 9 // only the largest 3 bars will be displayed
     },
     series: [{
         realtimeSort: true,
-        name: '服务请求数 TOP5（万次）',
+        name: '服务请求数 TOP10（万次）',
         type: 'bar',
         data: data,
         label: {
