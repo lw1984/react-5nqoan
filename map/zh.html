@@ -259,6 +259,14 @@
       border-color: #f90;
     }
 
+    .region-list.red .area-box .dot {
+      background: #C75D49;
+    }
+
+    .region-list.red .area-box .pulse {
+      border-color: #C75D49;
+    }
+
     .show-regin {
       position: absolute;
       left: 2px;
@@ -276,6 +284,11 @@
     .region-list:hover .show-regin,
     .underline-node .show-regin,
     .waite-node .show-regin {
+      height: 127px;
+      opacity: 1;
+    }
+
+    .red-node .show-regin {
       height: 127px;
       opacity: 1;
     }
@@ -317,6 +330,10 @@
     }
 
     .region-list.waite .show-regin span {
+      color: #ccc;
+    }
+
+    .region-list.red .show-regin span {
       color: #ccc;
     }
 
@@ -429,7 +446,7 @@
             <span class="pulse delay-02"></span>
           </div>
         </div>
-        <div class="region-list waite postition-4 waite-node">
+        <div class="region-list postition-4">
           <div class="area-box">
             <span class="dot"></span><span class="pulse delay-01"></span>
             <span class="pulse delay-02"></span>
@@ -443,7 +460,7 @@
           </div>
           <div class="show-regin"><span>湖北</span></div>
         </div>
-        <div class="region-list active postition-6 online-node">
+        <div class="region-list red postition-6 red-node">
           <div class="area-box">
             <span class="dot"></span><span class="pulse delay-06"></span>
             <span class="pulse delay-05"></span>
@@ -490,7 +507,7 @@
             <span class="pulse delay-08"></span>
           </div>
           <div class="show-regin"><span>江苏</span></div>
-        </div> 
+        </div>
         <div class="region-list active postition-10 online-node">
           <div class="area-box">
             <span class="dot"></span><span class="pulse delay-06"></span>
